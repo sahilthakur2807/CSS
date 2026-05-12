@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Box Model</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+    .card{max-width:900px;margin:0 auto;background:#fff;padding:24px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+    pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+    .demo{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+    .box{background:#2563eb;color:#fff;padding:12px;border:4px solid #fff;width:160px;height:80px;display:flex;align-items:center;justify-content:center}
+    .outer{background:#fff;padding:20px;border:4px dashed #e2e8f0}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>CSS Box Model</h1>
+    <p><strong>Theory:</strong> Every HTML element is a rectangular box composed of content, padding, border, and margin.</p>
+    <p><strong>Usage:</strong> Understanding the box model helps control spacing, sizing, and layout.</p>
+
+    <h2>Structure</h2>
+    <pre><code>/* Box model layers (inside → outside) */
+content
+padding
+border
+margin</code></pre>
+
+    <h2>Example (visual)</h2>
+    <div class="demo">
+      <div class="outer">
+        <div style="background:#f1f5f9;padding:12px;border:2px solid #94a3b8;">margin (outer)</div>
+        <div style="margin-top:8px; padding:12px; background:#eef2ff;">border (dashed area)</div>
+        <div style="margin-top:8px;padding:8px;background:#fff3f0;border:2px solid #fecaca;">padding</div>
+        <div style="margin-top:8px;padding:8px;background:#2563eb;color:#fff;">content</div>
+      </div>
+    </div>
+
+    <h2>Quick tip</h2>
+    <p>Use <code>box-sizing</code> to include padding/border in width/height calculations.</p>
+  </div>
+</body>
+</html>

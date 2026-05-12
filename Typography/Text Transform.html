@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Transform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .demo {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+
+    .box {
+      padding: 20px;
+      border-radius: 12px;
+      background: #f1f5f9;
+      border: 2px solid #e2e8f0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+      background: #dbeafe;
+      border-color: #93c5fd;
+      color: #1d4ed8;
+    }
+
+    .lowercase {
+      text-transform: lowercase;
+      background: #dcfce7;
+      border-color: #86efac;
+      color: #166534;
+    }
+
+    .capitalize {
+      text-transform: capitalize;
+      background: #fef3c7;
+      border-color: #fcd34d;
+      color: #92400e;
+    }
+
+    .none {
+      text-transform: none;
+      background: #f3e8ff;
+      border-color: #d8b4fe;
+      color: #6b21a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Text Transform</h1>
+    <p><strong>Concept:</strong> The text-transform property changes the capitalization style of text.</p>
+    <p><strong>Usage:</strong> Use it to automatically convert text to uppercase, lowercase, or capitalize each word.</p>
+    <p><strong>Explanation:</strong> This property changes how text appears without altering the actual text in the HTML file.</p>
+
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  text-transform: uppercase;
+}
+
+/* Common values */
+text-transform: none;
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;</code></pre>
+
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box uppercase">hello css</div>
+      <div class="box lowercase">Hello CSS</div>
+      <div class="box capitalize">hello css learning</div>
+      <div class="box none">No Transformation</div>
+    </div>
+  </div>
+</body>
+</html>

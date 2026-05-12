@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Families</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    
+    .box {
+      padding: 20px;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      text-align: center;
+    }
+    
+    .serif {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 18px;
+    }
+    
+    .sans-serif {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+    
+    .monospace {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+    }
+    
+    .cursive {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Font Families</h1>
+    <p><strong>Concept:</strong> Font families are groups of typefaces. Main categories: serif, sans-serif, monospace, and cursive.</p>
+    <p><strong>Usage:</strong> Choose a font family based on your design needs and readability goals.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>/* Serif fonts - have decorative lines */
+font-family: Georgia, 'Times New Roman', serif;
+
+/* Sans-serif fonts - clean, modern */
+font-family: Arial, Helvetica, sans-serif;
+
+/* Monospace - fixed width, coding */
+font-family: 'Courier New', monospace;
+
+/* Fallback system */
+font-family: 'Font Name', Alternative, generic-family;</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box serif">
+        <strong>Serif</strong><br>Georgia Font
+      </div>
+      <div class="box sans-serif">
+        <strong>Sans-serif</strong><br>Arial Font
+      </div>
+      <div class="box monospace">
+        <strong>Monospace</strong><br>Courier New
+      </div>
+      <div class="box cursive">
+        <strong>Cursive</strong><br>Comic Sans
+      </div>
+    </div>
+  </div>
+</body>
+</html>

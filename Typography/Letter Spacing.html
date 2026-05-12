@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter Spacing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .text {
+      padding: 16px;
+      font-size: 18px;
+      background: #f1f5f9;
+      border-left: 4px solid #2563eb;
+      border-radius: 8px;
+    }
+    
+    .tight { letter-spacing: -2px; }
+    .normal { letter-spacing: 0; }
+    .loose { letter-spacing: 2px; }
+    .very-loose { letter-spacing: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Letter Spacing</h1>
+    <p><strong>Concept:</strong> Letter spacing controls the distance between individual characters in text.</p>
+    <p><strong>Usage:</strong> Use it to improve readability, create visual effects, or adjust typography aesthetics.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  letter-spacing: 2px;
+}
+
+/* Values */
+letter-spacing: normal;   /* Default spacing */
+letter-spacing: -2px;     /* Tighter spacing */
+letter-spacing: 2px;      /* Loose spacing */
+letter-spacing: 0.1em;    /* Relative to font size */</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <p class="text tight">Tight Letter Spacing (-2px)</p>
+      <p class="text normal">Normal Letter Spacing (0)</p>
+      <p class="text loose">Loose Letter Spacing (2px)</p>
+      <p class="text very-loose">Very Loose Letter Spacing (5px)</p>
+    </div>
+  </div>
+</body>
+</html>

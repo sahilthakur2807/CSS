@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    
+    .box {
+      padding: 32px;
+      border-radius: 12px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .red-bg {
+      background-color: #dc2626;
+    }
+    
+    .blue-bg {
+      background-color: #2563eb;
+    }
+    
+    .green-bg {
+      background-color: #16a34a;
+    }
+    
+    .purple-bg {
+      background-color: #7c3aed;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Background Color</h1>
+    <p><strong>Concept:</strong> The background-color property sets the background color of an HTML element.</p>
+    <p><strong>Usage:</strong> Use it to add color to elements like boxes, buttons, headers, or the entire page.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  background-color: color-value;
+}
+
+/* Example */
+body {
+  background-color: #f8fafc;
+}
+
+div {
+  background-color: #2563eb;
+}</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box red-bg">Red Background</div>
+      <div class="box blue-bg">Blue Background</div>
+      <div class="box green-bg">Green Background</div>
+      <div class="box purple-bg">Purple Background</div>
+    </div>
+  </div>
+</body>
+</html>

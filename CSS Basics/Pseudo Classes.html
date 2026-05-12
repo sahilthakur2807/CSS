@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f8fafc; color: #111827; }
+    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 14px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button:hover { background: #16a34a; }
+    button { border: none; background: #22c55e; color: white; padding: 10px 16px; border-radius: 8px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Pseudo Classes</h1>
+    <p><strong>Theory:</strong> Pseudo classes style elements in a special state, such as hover, focus, or first-child.</p>
+    <p><strong>Usage:</strong> They are used for interactive and structural styling.</p>
+    <p><strong>Explanation:</strong> Pseudo classes let you react to user actions or element position without adding extra HTML.</p>
+
+    <h2>Example</h2>
+    <pre><code>a:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  background: green;
+}</code></pre>
+
+    <p><a href="#">Hover this link</a></p>
+    <button type="button">Hover this button</button>
+  </main>
+</body>
+</html>

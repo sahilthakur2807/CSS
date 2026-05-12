@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Shadow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .text {
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+    }
+    
+    .subtle { 
+      color: #333;
+      background: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .glow { 
+      color: #2563eb;
+      background: #f1f5f9;
+      text-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+    }
+    
+    .multiple { 
+      color: white;
+      background: #1f2937;
+      text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        -2px -2px 4px rgba(255, 255, 255, 0.3);
+    }
+    
+    .colored { 
+      color: #fff;
+      background: #7c3aed;
+      text-shadow: 3px 3px 0px #dc2626;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Text Shadow</h1>
+    <p><strong>Concept:</strong> Text shadow adds a shadow effect to text, creating depth and visual interest.</p>
+    <p><strong>Usage:</strong> Use shadows to make text stand out, create depth, or add decorative effects.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  text-shadow: offset-x offset-y blur-radius color;
+}
+
+/* Examples */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+/* Multiple shadows */
+text-shadow: 
+  2px 2px 4px #000,
+  -2px -2px 4px #fff;</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="text subtle">Subtle Shadow</div>
+      <div class="text glow">Glow Effect</div>
+      <div class="text multiple">Multiple Shadows</div>
+      <div class="text colored">Colored Shadow</div>
+    </div>
+  </div>
+</body>
+</html>

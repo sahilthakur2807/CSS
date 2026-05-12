@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Weight</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .text {
+      font-size: 18px;
+      padding: 12px;
+      background: #f1f5f9;
+      border-left: 4px solid #2563eb;
+      padding-left: 16px;
+    }
+    
+    .light { font-weight: 300; }
+    .normal { font-weight: 400; }
+    .bold { font-weight: 700; }
+    .extra-bold { font-weight: 900; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Font Weight</h1>
+    <p><strong>Concept:</strong> Font weight controls the thickness or boldness of text, from light to extra bold.</p>
+    <p><strong>Usage:</strong> Use different weights to create hierarchy and emphasize important text.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  font-weight: normal;  /* 400 */
+}
+
+/* Common values */
+font-weight: 100;      /* Thin */
+font-weight: 300;      /* Light */
+font-weight: 400;      /* Normal */
+font-weight: 700;      /* Bold */
+font-weight: 900;      /* Extra Bold */
+
+/* Keywords */
+font-weight: lighter;
+font-weight: normal;
+font-weight: bold;
+font-weight: bolder;</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <p class="text light">Light Weight (300)</p>
+      <p class="text normal">Normal Weight (400)</p>
+      <p class="text bold">Bold Weight (700)</p>
+      <p class="text extra-bold">Extra Bold Weight (900)</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Selectors</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f8fafc; color: #111827; }
+    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 14px; }
+    #special-box { padding: 16px; background: #fef3c7; border: 2px solid #f59e0b; border-radius: 12px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>ID Selectors</h1>
+    <p><strong>Theory:</strong> An ID selector targets one unique element. It starts with a hash symbol.</p>
+    <p><strong>Usage:</strong> Use IDs for a single important element on a page, such as a header section or a unique box.</p>
+    <p><strong>Explanation:</strong> IDs should be unique in a page, so they are more specific than class selectors.</p>
+
+    <h2>Example</h2>
+    <pre><code>#special-box {
+  background: #fef3c7;
+  border: 2px solid #f59e0b;
+}</code></pre>
+
+    <div id="special-box">This box uses an ID selector.</div>
+  </main>
+</body>
+</html>

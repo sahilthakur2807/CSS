@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Height</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    
+    .box {
+      padding: 16px;
+      background: #f1f5f9;
+      border-radius: 8px;
+    }
+    
+    .tight { line-height: 1; }
+    .normal { line-height: 1.5; }
+    .loose { line-height: 2; }
+    .very-loose { line-height: 2.5; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Line Height</h1>
+    <p><strong>Concept:</strong> Line height controls the vertical spacing between lines of text.</p>
+    <p><strong>Usage:</strong> Proper line height improves readability and makes text easier to scan.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  line-height: 1.5;
+}
+
+/* Values */
+line-height: normal;    /* Default */
+line-height: 1;         /* No extra space */
+line-height: 1.5;       /* 1.5x font size */
+line-height: 2;         /* 2x font size */
+line-height: 24px;      /* Fixed pixels */</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box tight">
+        <strong>Tight (1.0)</strong><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae nibh.
+      </div>
+      <div class="box normal">
+        <strong>Normal (1.5)</strong><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae nibh.
+      </div>
+      <div class="box loose">
+        <strong>Loose (2.0)</strong><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae nibh.
+      </div>
+      <div class="box very-loose">
+        <strong>Very Loose (2.5)</strong><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae nibh.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

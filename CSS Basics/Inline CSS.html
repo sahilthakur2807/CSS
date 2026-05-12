@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline CSS</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f9fafb; color: #111827; }
+    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 14px; }
+    .demo { margin-top: 16px; padding: 16px; background: #ecfeff; border-radius: 12px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Inline CSS</h1>
+    <p><strong>Theory:</strong> Inline CSS is written directly inside an HTML element using the style attribute.</p>
+    <p><strong>Usage:</strong> It is useful for quick testing, single-line changes, or when you need to style just one element.</p>
+    <p><strong>Explanation:</strong> Inline styles have high priority, but they are hard to maintain if used too much.</p>
+
+    <h2>Example</h2>
+    <pre><code>&lt;h2 style="color: teal; font-size: 28px;"&gt;Hello CSS&lt;/h2&gt;</code></pre>
+
+    <div class="demo">
+      <h2 style="color: teal; font-size: 28px;">Hello CSS</h2>
+    </div>
+  </main>
+</body>
+</html>

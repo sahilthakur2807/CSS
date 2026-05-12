@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types of CSS</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f8fafc; color: #111827; }
+    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 14px; }
+    code, pre { background: #111827; color: #e5e7eb; border-radius: 10px; }
+    pre { padding: 16px; overflow-x: auto; }
+    ul { line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Types of CSS</h1>
+    <p><strong>Theory:</strong> CSS can be written in three main ways: inline CSS, internal CSS, and external CSS.</p>
+    <p><strong>Usage:</strong> Choose the type based on the size of your project and how reusable you want the styles to be.</p>
+    <p><strong>Explanation:</strong> Inline CSS is written inside an HTML element, internal CSS is written inside a &lt;style&gt; tag in the HTML file, and external CSS is kept in a separate .css file.</p>
+
+    <h2>Main Types</h2>
+    <ul>
+      <li><strong>Inline CSS:</strong> quick for one element</li>
+      <li><strong>Internal CSS:</strong> useful for one page</li>
+      <li><strong>External CSS:</strong> best for reusable styles across many pages</li>
+    </ul>
+
+    <h2>Example</h2>
+    <pre><code>&lt;p style="color: red;"&gt;Inline CSS&lt;/p&gt;
+
+&lt;style&gt;
+  p { color: blue; }
+&lt;/style&gt;
+
+/* style.css */
+p { color: green; }</code></pre>
+  </main>
+</body>
+</html>

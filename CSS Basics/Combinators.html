@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinators</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f8fafc; color: #111827; }
+    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 14px; }
+    .parent > .child { color: #b91c1c; }
+    .parent .descendant { background: #fee2e2; padding: 10px; border-radius: 8px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Combinators</h1>
+    <p><strong>Theory:</strong> Combinators define relationships between selectors.</p>
+    <p><strong>Usage:</strong> They help you style elements based on their position in the HTML structure.</p>
+    <p><strong>Explanation:</strong> Common combinators include descendant, child, adjacent sibling, and general sibling.</p>
+
+    <h2>Example</h2>
+    <pre><code>.parent .descendant { color: red; }
+.parent > .child { color: red; }</code></pre>
+
+    <div class="parent">
+      <div class="child">Child element</div>
+      <div class="descendant">Descendant element</div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Box Sizing</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+    .card{max-width:900px;margin:0 auto;background:#fff;padding:24px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+    pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+    .demo{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+    .box{background:#2563eb;color:#fff;padding:12px;border-radius:8px}
+    .sized{width:200px;padding:24px;border:8px solid #fff}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Box Sizing</h1>
+    <p><strong>Theory:</strong> The <code>box-sizing</code> property controls whether width/height include padding and border.</p>
+    <p><strong>Usage:</strong> Use <code>box-sizing: border-box</code> to make element sizing include padding/border (easier layout).</p>
+
+    <h2>Values</h2>
+    <pre><code>content-box   /* default: width/height apply to content only */
+border-box    /* width/height include padding and border */</code></pre>
+
+    <h2>Demo</h2>
+    <div class="demo">
+      <div>
+        <h3>content-box (default)</h3>
+        <div class="box sized" style="box-sizing:content-box">width:200px + padding/border add to size</div>
+      </div>
+      <div>
+        <h3>border-box</h3>
+        <div class="box sized" style="box-sizing:border-box">width:200px includes padding/border</div>
+      </div>
+    </div>
+
+    <h2>Tip</h2>
+    <p>Common pattern: <code>*{box-sizing:border-box}</code> to simplify responsive layouts.</p>
+  </div>
+</body>
+</html>

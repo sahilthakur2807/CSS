@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Alignment</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .box {
+      padding: 20px;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      background: #f8fafc;
+    }
+    
+    .left { text-align: left; }
+    .center { text-align: center; }
+    .right { text-align: right; }
+    .justify { text-align: justify; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Text Alignment</h1>
+    <p><strong>Concept:</strong> Text alignment controls how text is positioned horizontally within its container.</p>
+    <p><strong>Usage:</strong> Use alignment to organize text layout and improve readability.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  text-align: left;
+}
+
+/* Common values */
+text-align: left;      /* Default */
+text-align: right;     /* Align to right */
+text-align: center;    /* Center text */
+text-align: justify;   /* Stretch to fill */</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box left">
+        <strong>Left Aligned:</strong> This text is aligned to the left side of the container.
+      </div>
+      <div class="box center">
+        <strong>Center Aligned:</strong> This text is centered in the container.
+      </div>
+      <div class="box right">
+        <strong>Right Aligned:</strong> This text is aligned to the right side.
+      </div>
+      <div class="box justify">
+        <strong>Justified:</strong> This text is justified, spreading across the entire width of the container to create even edges on both sides.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

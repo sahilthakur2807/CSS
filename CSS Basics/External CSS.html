@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External CSS</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background: #f1f5f9; color: #0f172a; }
+    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 14px; }
+    .demo { margin-top: 16px; padding: 16px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 12px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>External CSS</h1>
+    <p><strong>Theory:</strong> External CSS is stored in a separate .css file and linked to HTML with a &lt;link&gt; tag.</p>
+    <p><strong>Usage:</strong> It is the best choice for real projects because the same CSS file can style many pages.</p>
+    <p><strong>Explanation:</strong> It separates structure and design, making code easier to maintain and reuse.</p>
+
+    <h2>Example</h2>
+    <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+
+/* style.css */
+h1 {
+  color: #2563eb;
+}</code></pre>
+
+    <div class="demo">
+      <h2 style="color: #2563eb;">This looks like external CSS</h2>
+      <p>In practice, the CSS would live in a separate file.</p>
+    </div>
+  </main>
+</body>
+</html>

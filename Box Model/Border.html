@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Border</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+    .card{max-width:900px;margin:0 auto;background:#fff;padding:24px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+    pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+    .demo{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+    .box{padding:16px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Border</h1>
+    <p><strong>Theory:</strong> Borders surround an element's padding and content; they can be styled with width, style, and color.</p>
+    <p><strong>Usage:</strong> Use borders to separate content, emphasize elements, or create simple UI outlines.</p>
+
+    <h2>Syntax</h2>
+    <pre><code>element { border: width style color; }
+
+/* Examples */
+border: 2px solid #2563eb;
+border-top: 4px dashed #f59e0b;
+border-radius: 8px; /* rounded corners */</code></pre>
+
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box" style="border:2px solid #2563eb">2px solid</div>
+      <div class="box" style="border:4px dashed #16a34a">4px dashed</div>
+      <div class="box" style="border:6px double #7c3aed">6px double</div>
+      <div class="box" style="border:2px solid #dc2626;border-radius:12px;padding:12px;background:#fff5f5">rounded</div>
+    </div>
+  </div>
+</body>
+</html>

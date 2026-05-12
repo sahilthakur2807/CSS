@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Position</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 24px;
+      background: #f8fafc;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+    
+    h1 {
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    
+    .demo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+    
+    .box {
+      height: 180px;
+      border-radius: 12px;
+      background-size: 60px 60px;
+      background-repeat: no-repeat;
+      border: 2px solid #e2e8f0;
+    }
+    
+    .pos-top-left {
+      background-image: radial-gradient(circle, #2563eb 20px, transparent 20px);
+      background-position: top left;
+    }
+    
+    .pos-center {
+      background-image: radial-gradient(circle, #16a34a 20px, transparent 20px);
+      background-position: center;
+    }
+    
+    .pos-bottom-right {
+      background-image: radial-gradient(circle, #dc2626 20px, transparent 20px);
+      background-position: bottom right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Background Position</h1>
+    <p><strong>Concept:</strong> The background-position property sets the starting position of a background image.</p>
+    <p><strong>Usage:</strong> Use it to place images at specific locations within an element.</p>
+    
+    <h2>CSS Syntax</h2>
+    <pre><code>element {
+  background-image: url('image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Common values */
+background-position: top left;
+background-position: center;
+background-position: bottom right;
+background-position: 50% 50%;
+background-position: 10px 20px;</code></pre>
+    
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box pos-top-left">
+        <p style="padding: 8px; color: #0f172a;">Top Left</p>
+      </div>
+      <div class="box pos-center">
+        <p style="padding: 8px; color: #0f172a;">Center</p>
+      </div>
+      <div class="box pos-bottom-right">
+        <p style="padding: 8px; color: #0f172a;">Bottom Right</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
