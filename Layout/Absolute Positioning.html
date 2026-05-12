@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Absolute Positioning</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+  .card{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+  pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+  .wrap{background:#f1f5f9;padding:20px;border-radius:8px;position:relative;height:220px}
+  .abs{position:absolute;top:20px;left:20px;background:#7c3aed;color:#fff;padding:10px;border-radius:6px}
+  .abs2{position:absolute;bottom:20px;right:20px;background:#ef4444;color:#fff;padding:10px;border-radius:6px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Absolute Positioning</h1>
+    <p><strong>Theory:</strong> <code>position: absolute</code> positions an element relative to its nearest positioned ancestor (non-static). It’s removed from normal flow.</p>
+    <p><strong>Usage:</strong> Use absolute positioning for overlays, tooltips, or fine-grained placement inside a positioned container.</p>
+
+    <h2>Demo</h2>
+    <div class="wrap">
+      <div class="abs">Absolute top-left</div>
+      <div class="abs2">Absolute bottom-right</div>
+      <p style="padding-top:60px;color:#334155">The paragraph remains in the flow while absolute elements float above.</p>
+    </div>
+  </div>
+</body>
+</html>

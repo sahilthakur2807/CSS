@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Position Property</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+  .card{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+  pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+  .layout{position:relative;height:220px;background:#f1f5f9;border-radius:8px;padding:12px}
+  .marker{position:absolute;padding:8px;background:#2563eb;color:#fff;border-radius:6px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Position Property</h1>
+    <p><strong>Theory:</strong> The <code>position</code> property sets how an element is positioned: <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, or <code>sticky</code>.</p>
+    <p><strong>Usage:</strong> Use it to take elements out of normal flow or to offset them relative to a container or viewport.</p>
+
+    <h2>Syntax</h2>
+    <pre><code>element { position: static | relative | absolute | fixed | sticky; top: value; left: value; }</code></pre>
+
+    <h2>Demo</h2>
+    <div class="layout">
+      <div class="marker" style="top:12px;left:12px">base (static)</div>
+      <div class="marker" style="top:60px;left:120px;position:relative">relative offset</div>
+      <div class="marker" style="top:120px;left:12px;position:absolute">absolute</div>
+    </div>
+  </div>
+</body>
+</html>

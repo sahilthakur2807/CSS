@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Overflow</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+  .card{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+  pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+  .wrap{width:320px;height:120px;border:2px solid #e6eef8;padding:8px;overflow:auto;background:#fff}
+  .content{height:240px;background:linear-gradient(#fff,#eef2ff)}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Overflow</h1>
+    <p><strong>Theory:</strong> The <code>overflow</code> property controls what happens when content overflows its container: <code>visible</code>, <code>hidden</code>, <code>scroll</code>, <code>auto</code>.</p>
+    <p><strong>Usage:</strong> Use it to add scrollbars, hide overflow, or allow automatic scrolling when needed.</p>
+
+    <h2>Demo</h2>
+    <div class="wrap" style="overflow:visible">
+      <div class="content">overflow: visible (content spills out)</div>
+    </div>
+    <div style="height:12px"></div>
+    <div class="wrap" style="overflow:hidden">
+      <div class="content">overflow: hidden (content clipped)</div>
+    </div>
+    <div style="height:12px"></div>
+    <div class="wrap" style="overflow:auto">
+      <div class="content">overflow: auto (scrollbars when needed)</div>
+    </div>
+  </div>
+</body>
+</html>

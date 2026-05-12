@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sticky Positioning</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;padding:24px;background:#f8fafc;color:#0f172a}
+  .card{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+  pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+  .header{position:sticky;top:0;background:#2563eb;color:#fff;padding:12px;border-radius:6px}
+  .content{height:800px;padding-top:12px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Sticky Positioning</h1>
+    <p><strong>Theory:</strong> <code>position: sticky</code> toggles between relative and fixed depending on scroll position — it becomes fixed when crossing a threshold.</p>
+    <p><strong>Usage:</strong> Use for headers that should stick to the top after scrolling past them.</p>
+
+    <div class="header">I will stick to the top when you scroll</div>
+    <div class="content">
+      <p>Scroll down to see sticky behaviour. This content is tall to allow scrolling.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Display Property</title>
+<style>
+  body{
+    font-family:Arial,Helvetica,sans-serif;
+    padding:24px;
+    background:#f8fafc;
+    color:#0f172a
+}
+
+  .card{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+  pre{background:#0f172a;color:#e2e8f0;padding:12px;border-radius:8px;overflow:auto}
+  .demo{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+  .box{padding:12px;border-radius:8px;background:#2563eb;color:#fff}
+  .inline{display:inline;background:#10b981}
+  .block{display:block;width:100%}
+  .inline-block{display:inline-block}
+  .flex{display:flex;gap:8px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Display Property</h1>
+    <p><strong>Theory:</strong> The <code>display</code> property defines how an element is displayed in the layout (block, inline, inline-block, flex, grid, none).</p>
+    <p><strong>Usage:</strong> Use it to control flow and layout behaviour of elements.</p>
+
+    <h2>Syntax</h2>
+    <pre><code>element { display: block | inline | inline-block | flex | grid | none; }</code></pre>
+
+    <h2>Demo</h2>
+    <div class="demo">
+      <div class="box inline">inline</div>
+      <div class="box inline-block">inline-block</div>
+      <div class="box block">block (100% width)</div>
+    </div>
+
+    <h2>Flex example</h2>
+    <div class="demo flex">
+      <div class="box">Flex item 1</div>
+      <div class="box">Flex item 2</div>
+      <div class="box">Flex item 3</div>
+    </div>
+  </div>
+</body>
+</html>
